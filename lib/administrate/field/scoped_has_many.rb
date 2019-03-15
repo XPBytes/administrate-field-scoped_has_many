@@ -1,9 +1,12 @@
+require 'administrate/field/has_many'
 require 'administrate/field/scoped_has_many/version'
-require 'rails'
+require 'rails/engine'
 
 module Administrate
   module Field
     class ScopedHasMany < Administrate::Field::HasMany
+      include ScopedHasManyVersion
+
       class Engine < ::Rails::Engine
       end
 

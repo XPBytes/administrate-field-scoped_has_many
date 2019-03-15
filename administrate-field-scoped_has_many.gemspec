@@ -4,7 +4,7 @@ require 'administrate/field/scoped_has_many/version'
 
 Gem::Specification.new do |spec|
   spec.name          = 'administrate-field-scoped_has_many'
-  spec.version       = Administrate::Field::ScopedHasMany::VERSION
+  spec.version       = Administrate::Field::ScopedHasManyVersion::VERSION
   spec.authors       = ['Derk-Jan Karrenbeld']
   spec.email         = ['derk-jan@xpbytes.com']
 
@@ -37,5 +37,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'administrate', '>= 0.11.0', '< 1'
   spec.add_development_dependency 'bundler', '~> 2.0'
   spec.add_development_dependency 'minitest', '~> 5.0'
+  spec.add_development_dependency 'rails'
   spec.add_development_dependency 'rake', '~> 10.0'
 end
