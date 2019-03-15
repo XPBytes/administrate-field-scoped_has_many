@@ -1,0 +1,17 @@
+---
+sudo: false
+language: ruby
+cache: bundler
+rvm:
+  - 2.5
+  - 2.6
+  - ruby-head
+before_install:
+  - gem install bundler -v 2.0.1
+  - gem update --system
+  - gem --version
+matrix:
+  allow_failures:
+    - rvm: ruby-head
+install:
+  - bundle install --with development --jobs=3 --retry=3 --path=${BUNDLE_PATH:-vendor/bundle}
