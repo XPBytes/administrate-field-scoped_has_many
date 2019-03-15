@@ -1,0 +1,16 @@
+/.bundle/
+/.yardoc
+/Gemfile.lock
+/_yardoc/
+/coverage/
+/doc/
+/pkg/
+/spec/reports/
+/tmp/
+
+.idea/workspace.xml
+.idea/usage.statistics.xml
+.idea/tasks.xml
+
+.idea/dataSources**
+.idea/dataSources.local.xml
