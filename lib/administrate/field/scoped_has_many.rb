@@ -18,6 +18,10 @@ module Administrate
         "/fields/#{self.class.superclass.field_type}/#{page}"
       end
 
+      def self.html_class
+        "has-many"
+      end
+
       private
 
       def candidate_resources
