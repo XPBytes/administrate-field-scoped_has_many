@@ -1,10 +1,10 @@
-require 'administrate/field/has_many'
+require 'administrate/field/belongs_to'
 require 'administrate/field/scoped_has_many/version'
 require 'rails/engine'
 
 module Administrate
   module Field
-    class ScopedHasMany < Administrate::Field::HasMany
+    class ScopedBelongsTo < Administrate::Field::BelongsTo
       include ScopedHasManyVersion
 
       class Engine < ::Rails::Engine
@@ -19,7 +19,7 @@ module Administrate
       end
 
       def self.html_class
-        "has-many"
+        "belongs-to"
       end
 
       private
